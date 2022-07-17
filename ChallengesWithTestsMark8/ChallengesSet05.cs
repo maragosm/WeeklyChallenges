@@ -33,7 +33,7 @@ namespace ChallengesWithTestsMark8
                 int[] numbersOrdered = new int[numbers.Length];
                 numbersOrdered = numbers;
                 numbersOrdered = numbersOrdered.OrderBy(x => x).ToArray();
-                if (Enumerable.SequenceEqual(numbers, numbersOrdered)) { return true; }
+                if (Enumerable.SequenceEqual(numbers, numbersOrdered)) return true;
             }
             return false;
         }
@@ -67,7 +67,7 @@ namespace ChallengesWithTestsMark8
                     }
                 }
                 sentence = sentence + ".";
-                if(!sentence.Any(char.IsLetter)) { sentence = ""; }
+                if (!sentence.Any(char.IsLetter)) { sentence = ""; }
                 return sentence;
             }
             return "";
